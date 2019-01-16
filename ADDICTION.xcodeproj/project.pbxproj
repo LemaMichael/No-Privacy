@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CFAC0D421EF0834009DE1BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFAC0D321EF0834009DE1BF /* UIKit.framework */; };
+		4CFAC0D621EF0834009DE1BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFAC0D521EF0834009DE1BF /* Foundation.framework */; };
+		4CFAC0D821EF0834009DE1BF /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFAC0D721EF0834009DE1BF /* CydiaSubstrate.framework */; };
+		4CFAC0E121EF0834009DE1BF /* ADDICTION.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CFAC0E021EF0834009DE1BF /* ADDICTION.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4CFAC0D021EF0834009DE1BF /* ADDICTION.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ADDICTION.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CFAC0D321EF0834009DE1BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CFAC0D521EF0834009DE1BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CFAC0D721EF0834009DE1BF /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CydiaSubstrate.framework; path = Library/Frameworks/CydiaSubstrate.framework; sourceTree = DEVELOPER_DIR; };
+		4CFAC0DC21EF0834009DE1BF /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		4CFAC0DE21EF0834009DE1BF /* ADDICTION-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ADDICTION-Prefix.pch"; sourceTree = "<group>"; };
+		4CFAC0DF21EF0834009DE1BF /* ADDICTION.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = ADDICTION.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		4CFAC0E021EF0834009DE1BF /* ADDICTION.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ADDICTION.mm; sourceTree = "<group>"; };
+		4CFAC0E521EF0834009DE1BF /* ADDICTION.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ADDICTION.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/ADDICTION.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CFAC0CC21EF0834009DE1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFAC0D421EF0834009DE1BF /* UIKit.framework in Frameworks */,
+				4CFAC0D621EF0834009DE1BF /* Foundation.framework in Frameworks */,
+				4CFAC0D821EF0834009DE1BF /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CFAC0C521EF0834009DE1BF = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0D921EF0834009DE1BF /* ADDICTION */,
+				4CFAC0D221EF0834009DE1BF /* Frameworks */,
+				4CFAC0D121EF0834009DE1BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CFAC0D121EF0834009DE1BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0D021EF0834009DE1BF /* ADDICTION.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CFAC0D221EF0834009DE1BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0D321EF0834009DE1BF /* UIKit.framework */,
+				4CFAC0D521EF0834009DE1BF /* Foundation.framework */,
+				4CFAC0D721EF0834009DE1BF /* CydiaSubstrate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CFAC0D921EF0834009DE1BF /* ADDICTION */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0DF21EF0834009DE1BF /* ADDICTION.xm */,
+				4CFAC0E021EF0834009DE1BF /* ADDICTION.mm */,
+				4CFAC0DA21EF0834009DE1BF /* Package */,
+				4CFAC0DD21EF0834009DE1BF /* Supporting Files */,
+			);
+			path = ADDICTION;
+			sourceTree = "<group>";
+		};
+		4CFAC0DA21EF0834009DE1BF /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0DB21EF0834009DE1BF /* DEBIAN */,
+				4CFAC0E221EF0834009DE1BF /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		4CFAC0DB21EF0834009DE1BF /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0DC21EF0834009DE1BF /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		4CFAC0DD21EF0834009DE1BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0DE21EF0834009DE1BF /* ADDICTION-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CFAC0E221EF0834009DE1BF /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0E321EF0834009DE1BF /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4CFAC0E321EF0834009DE1BF /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0E421EF0834009DE1BF /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4CFAC0E421EF0834009DE1BF /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC0E521EF0834009DE1BF /* ADDICTION.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4CFAC0CD21EF0834009DE1BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4CFAC0CF21EF0834009DE1BF /* ADDICTION */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFAC0E821EF0834009DE1BF /* Build configuration list for PBXNativeTarget "ADDICTION" */;
+			buildPhases = (
+				4CFAC0CA21EF0834009DE1BF /* ShellScript */,
+				4CFAC0CB21EF0834009DE1BF /* Sources */,
+				4CFAC0CC21EF0834009DE1BF /* Frameworks */,
+				4CFAC0CD21EF0834009DE1BF /* Headers */,
+				4CFAC0CE21EF0834009DE1BF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADDICTION;
+			productName = ADDICTION;
+			productReference = 4CFAC0D021EF0834009DE1BF /* ADDICTION.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CFAC0C621EF0834009DE1BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					4CFAC0CF21EF0834009DE1BF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4CFAC0C921EF0834009DE1BF /* Build configuration list for PBXProject "ADDICTION" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4CFAC0C521EF0834009DE1BF;
+			productRefGroup = 4CFAC0D121EF0834009DE1BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CFAC0CF21EF0834009DE1BF /* ADDICTION */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CFAC0CA21EF0834009DE1BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+		4CFAC0CE21EF0834009DE1BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CFAC0CB21EF0834009DE1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CFAC0E121EF0834009DE1BF /* ADDICTION.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4CFAC0E621EF0834009DE1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"ADDICTION\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CFAC0E721EF0834009DE1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"ADDICTION\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		4CFAC0E921EF0834009DE1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADDICTION/ADDICTION-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4CFAC0EA21EF0834009DE1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ADDICTION/ADDICTION-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CFAC0C921EF0834009DE1BF /* Build configuration list for PBXProject "ADDICTION" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFAC0E621EF0834009DE1BF /* Release */,
+				4CFAC0E721EF0834009DE1BF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CFAC0E821EF0834009DE1BF /* Build configuration list for PBXNativeTarget "ADDICTION" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CFAC0E921EF0834009DE1BF /* Release */,
+				4CFAC0EA21EF0834009DE1BF /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CFAC0C621EF0834009DE1BF /* Project object */;
+}
